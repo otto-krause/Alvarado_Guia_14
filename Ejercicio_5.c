@@ -24,8 +24,8 @@ void main()
     {
         for (I=1; I<=300; I++)
         {
-            printf("Ingrese el alumno y el bimestre a cambiar\n");
-            printf("Alumno: ");
+            printf("Ingrese el numero de legajo del alumno y el bimestre a cambiar\n");
+            printf("N Legajo: ");
             scanf("%d", &D[1]);
             printf("Trimestre: ");
             scanf("%d", &D[2]);
@@ -55,10 +55,23 @@ void main()
                     I=300;
                 }
             }
+            else
+            {
+                M[D[1]][D[2]]=D[0];
+                printf("\nDesea continuar? (SI=1 | NO=2): ");
+                scanf("%d", &R);
+                if (R==1)
+                {
+                    system("cls");
+                }
+                else
+                {
+                    I=300;
+                }
+            }
         }
     }
     else
     {
-        M[D[1]][D[2]]=D[0];
     }
 }
