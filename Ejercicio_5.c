@@ -3,8 +3,8 @@
 
 void main()
 {
-    int M[101][4]={0}, D[3]={0}, F=0, C=0, R=0, P=0, V=0, I=0;
-    for (F=1; F<=100; F++)
+    int M[101][4]={0}, D[3]={0}, F=0, C=0, R=0, P=0, I=0;
+    for (F=1; F<=3; F++)
     {
         printf("Ingrese las notas de los tres bimestres del alumno %d\n", F);
         for (C=1; C<=3; C++)
