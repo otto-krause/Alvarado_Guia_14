@@ -49,7 +49,6 @@ void main()
                 if (R==1)
                 {
                     system("cls");
-
                 }
                 else
                 {
