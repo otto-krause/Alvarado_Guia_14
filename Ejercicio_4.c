@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+void main()
 {
 
     int Matriz[14][4]={0}, MT=0, L=0, V=0, C=0;
