@@ -4,7 +4,7 @@
 void main()
 {
     int M[101][4]={0}, D[3]={0}, F=0, C=0, R=0, P=0;
-    for (F=1; F<=3; F++)
+    for (F=1; F<=100; F++)
     {
         printf("Ingrese las notas de los tres bimestres del alumno %d\n", F);
         for (C=1; C<=3; C++)
@@ -39,9 +39,6 @@ void main()
         if (R==1)
         {
             system("cls");
-            P=(M[D[1]][1]+M[D[1]][2]+M[D[1]][3])/3;
-            printf("N Legajo\tTrimestre 1\tTrimestre 2\tTrimestre 3\tPromedio\n");
-            printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\n", D[1], M[D[1]][1], M[D[1]][2], M[D[1]][3], P);
             printf("\nDesea continuar? (SI=1 | NO=2): ");
             scanf("%d", &R);
             if (R==1)
@@ -65,5 +62,13 @@ void main()
             {
             }
         }
+    }
+    system("cls");
+
+    for (F=1; F<=100; F++)
+    {
+        P=(M[F][1]+M[F][2]+M[F][3])/3;
+        printf("N Legajo\tTrimestre 1\tTrimestre 2\tTrimestre 3\tPromedio\n");
+        printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\n\n", F, M[F][1], M[F][2], M[F][3], P);
     }
 }
