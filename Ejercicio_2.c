@@ -19,8 +19,10 @@ void main()
     for (C=0; C<3; C++)
     {
         Matriz[0][C]=Matriz[0][C]*4;
-        Matriz[1][C]=Matriz[1][C]*3;
     }
+
+    Matriz[0][2]=Matriz[0][2]*3;
+    Matriz[1][2]=Matriz[1][2]*3;
 
     for (F=0; F<2; F++)
     {
@@ -28,6 +30,6 @@ void main()
         {
             printf("%d\t", Matriz[F][C]);
         }
-        printf("\n");       
+        printf("\n");
     }
 }
