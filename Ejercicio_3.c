@@ -16,21 +16,13 @@ void main()
 
     system("cls");
 
-    printf("La matriz modificada es:\n\n");
     for (C=0; C<3; C++)
     {
         Matriz[0][C]=Matriz[0][C]*4;
-        Matriz[1][C]=Matriz[1][C]*3;
     }
 
-    for (F=0; F<2; F++)
-    {
-        for (C=0; C<3; C++)
-        {
-            printf("%d\t", Matriz[F][C]);
-        }
-        printf("\n");       
-    }
+    Matriz[0][2]=Matriz[0][2]*3;
+    Matriz[1][2]=Matriz[1][2]*3;
 
     M=Matriz[0][0];
 
@@ -46,5 +38,15 @@ void main()
         }
         printf("\n");       
     }
-    printf("\nEl valor mas bajo de la matriz es %d y la suma de sus valores %d", M, S);
+    printf("El valor mas bajo de la matriz es %d y la suma de su contenido es %d\n\n", M, S);
+
+    printf("La matriz modificada es:\n\n");
+    for (F=0; F<2; F++)
+    {
+        for (C=0; C<3; C++)
+        {
+            printf("%d\t", Matriz[F][C]);
+        }
+        printf("\n");       
+    }
 }
