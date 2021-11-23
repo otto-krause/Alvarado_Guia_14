@@ -24,6 +24,7 @@ void main()
     Matriz[0][2]=Matriz[0][2]*3;
     Matriz[1][2]=Matriz[1][2]*3;
 
+    printf("La matriz final es:\n\n");
     for (F=0; F<2; F++)
     {
         for (C=0; C<3; C++)
