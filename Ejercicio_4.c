@@ -3,7 +3,7 @@
 
 void main()
 {
-    int Matriz[13][4]={0}, R=0, L=0, C=0, MI=0, MT=0;
+    int Matriz[13][4]={0}, R=0, L=0, C=0, MT=0;
     printf("Ingrese los datos del coche: \n");
     for (R=1; R<=36; R++)
     {
