@@ -15,7 +15,7 @@ int main()
             printf("Coche: ");
             scanf("%d", &C);
             
-            if (C<=0)
+            if (C<1)
             {
                 V=13;
             }
