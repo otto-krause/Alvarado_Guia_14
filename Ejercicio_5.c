@@ -4,7 +4,7 @@
 void main()
 {
     int M[101][4]={0}, D[3]={0}, F=0, C=0, R=0, P=0, V=0, I=0;
-    for (F=1; F<=3; F++)
+    for (F=1; F<=100; F++)
     {
         printf("Ingrese las notas de los tres bimestres del alumno %d\n", F);
         for (C=1; C<=3; C++)
@@ -18,10 +18,9 @@ void main()
     printf("Quiere cambiar alguna nota? (SI=1 | NO=2): ");
     scanf("%d", &R);
 
-    system("cls");
-
     if (R==1)
     {
+        system("cls");
         for (I=1; I<=300; I++)
         {
             printf("Ingrese el numero de legajo del alumno y el bimestre a cambiar\n");
