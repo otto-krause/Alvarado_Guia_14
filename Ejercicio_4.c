@@ -3,44 +3,45 @@
 
 void main()
 {
-    int Matriz[13][4]={0}, R=0, L=0, C=1, MT=0;
+    int Matriz[13][4]={0}, I=0, J=0, MT=0;
     do
     {
         printf("Ingrese los datos del coche: \n");
         printf("Linea: ");
-        scanf("%d", &L);
+        scanf("%d", &I);
 
         printf("Coche: ");
-        scanf("%d", &C);
-        if (C>=1)
+        scanf("%d", &J);
+        if (J>=1)
         {
             printf("Recaudacion: ");
-            scanf("%d", &Matriz[C][L]);
+            scanf("%d", &Matriz[J][I]);
         }
         else
         {
         }
-        
-        system("cls"); 
-    }    
-    while (C>=1);
 
-    for (L=1; L<=3; L++)
+        system("cls");
+    }
+    while (J>=1);
+
+    for (I=1; I<=3; I++)
     {
-        printf("\nLas recaudaciones de los coches de la linea %d fueron:\n", L);
-        for (R=1; R<=12; R++)
+        printf("\nLas recaudaciones de los coches de la linea %d fueron:\n", I);
+        for (J=1; J<=12; J++)
         {
-            printf("Coche %d: %d\n", R, Matriz[R][L]);
-            Matriz[0][L]=Matriz[0][L]+Matriz[R][L];
+            printf("Coche %d: %d\n", J, Matriz[J][I]);
+            Matriz[0][I]=Matriz[0][I]+Matriz[J][I];
         }
     }
 
     printf("\nLas recaudaciones totales de cada linea fueron:\n");
-    for (L=1; L<=3; L++)
+    for (I=1; I<=3; I++)
     {
-        printf("Linea %d: %d\n", L, Matriz[0][L]);
-        MT=MT+Matriz[0][L];
+        printf("Linea %d: %d\n", I, Matriz[0][I]);
+        MT=MT+Matriz[0][I];
     }
 
     printf("\nLa recaudacion total de las tres lineas fue %d", MT);
 }
+
