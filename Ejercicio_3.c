@@ -21,8 +21,10 @@ void main()
         Matriz[0][C]=Matriz[0][C]*4;
     }
 
-    Matriz[0][2]=Matriz[0][2]*3;//Estructuras repetitivas
-    Matriz[1][2]=Matriz[1][2]*3;
+    for (F=0; F<2; F++)
+    {
+        Matriz[F][2]=Matriz[F][2]*3;
+    }
 
     M=Matriz[0][0];
 
