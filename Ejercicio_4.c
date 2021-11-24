@@ -5,7 +5,7 @@ void main()
 {
     int Matriz[13][4]={0}, R=0, L=0, C=0, MT=0;
     printf("Ingrese los datos del coche: \n");
-    for (R=1; R<=36; R++)
+    for (R=1; R<=36; R++)//Si no conozco la cantidad de veces que se repite el ciclo debe utilizar while.
     {
         printf("Linea: ");
         scanf("%d", &L);
