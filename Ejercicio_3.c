@@ -3,7 +3,7 @@
 
 void main()
 {
-    int Matriz[2][3]={0}, F=0, C=0, S=0, M=0;
+    int Matriz[2][3]={0}, I=0, J=0, S=0, M=0;
     printf("Ingrese tres numeros por fila\n");
     for (I=0; I<2; I++)
     {
@@ -25,7 +25,7 @@ void main()
     {
         Matriz[I][2]=Matriz[I][2]*3;
     }
-    
+
     M=Matriz[0][0];
 
     for (I=0; I<2; I++)
@@ -38,7 +38,7 @@ void main()
             }
             S=S+Matriz[I][J];
         }
-        printf("\n");       
+        printf("\n");
     }
     printf("El valor mas bajo de la matriz es %d y la suma de su contenido es %d\n\n", M, S);
 
@@ -47,8 +47,8 @@ void main()
     {
         for (J=0; J<3; J++)
         {
-            printf("%d\t", Matriz[F][C]);
+            printf("%d\t", Matriz[I][J]);
         }
-        printf("\n");       
+        printf("\n");
     }
 }
