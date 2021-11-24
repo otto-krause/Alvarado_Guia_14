@@ -20,9 +20,11 @@ void main()
     {
         Matriz[0][C]=Matriz[0][C]*4;
     }
-
-    Matriz[0][2]=Matriz[0][2]*3;//Se deben usar estructuras repetitivas para recorrer...
-    Matriz[1][2]=Matriz[1][2]*3;
+    
+    for (F=0; F<2; F++)
+    {
+        Matriz[F][2]=Matriz[F][2]*3;
+    }
 
     printf("La matriz modificada es:\n\n");
     for (F=0; F<2; F++)
