@@ -3,27 +3,27 @@
 
 void main()
 {
-    int Matriz[13][4]={0}, R=0, L=0, C=0, MT=0;
-    printf("Ingrese los datos del coche: \n");
-    for (R=1; R<=36; R++)//Si no conozco la cantidad de veces que se repite el ciclo debe utilizar while.
+    int Matriz[13][4]={0}, R=0, L=0, C=1, MT=0;
+    do
     {
+        printf("Ingrese los datos del coche: \n");
         printf("Linea: ");
         scanf("%d", &L);
 
         printf("Coche: ");
         scanf("%d", &C);
-        
-        if (C<1)
-        {
-            R=36;
-        }
-        else
+        if (C>=1)
         {
             printf("Recaudacion: ");
             scanf("%d", &Matriz[C][L]);
         }
-        system("cls");
-    }
+        else
+        {
+        }
+        
+        system("cls"); 
+    }    
+    while (C>=1);
 
     for (L=1; L<=3; L++)
     {
