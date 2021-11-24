@@ -3,37 +3,36 @@
 
 void main()
 {
-    int Matriz[2][3]={0}, F=0, C=0;
+    int Matriz[2][3]={0}, I=0, J=0;
     printf("Ingrese tres numeros por fila\n");
-    for (F=0; F<2; F++)
+    for (I=0; I<2; I++)
     {
-        for (C=0; C<3; C++)
+        for (J=0; J<3; J++)
         {
-            scanf("%d", &Matriz[F][C]);
+            scanf("%d", &Matriz[I][J]);
         }
         printf("\n");
     }
 
     system("cls");
 
-    for (C=0; C<3; C++)
+    for (J=0; J<3; J++)
     {
-        Matriz[0][C]=Matriz[0][C]*4;
+        Matriz[0][J]=Matriz[0][J]*4;
     }
-    
-    for (F=0; F<2; F++)
+
+    for (I=0; I<2; I++)
     {
-        Matriz[F][2]=Matriz[F][2]*3;
+        Matriz[I][2]=Matriz[I][2]*3;
     }
 
     printf("La matriz modificada es:\n\n");
-    for (F=0; F<2; F++)
+    for (I=0; I<2; I++)
     {
-        for (C=0; C<3; C++)
+        for (J=0; J<3; J++)
         {
-            printf("%d\t", Matriz[F][C]);
+            printf("%d\t", Matriz[I][J]);
         }
         printf("\n");
     }
 }
-
