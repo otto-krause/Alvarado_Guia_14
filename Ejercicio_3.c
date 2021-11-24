@@ -5,47 +5,47 @@ void main()
 {
     int Matriz[2][3]={0}, F=0, C=0, S=0, M=0;
     printf("Ingrese tres numeros por fila\n");
-    for (F=0; F<2; F++)
+    for (I=0; I<2; I++)
     {
-        for (C=0; C<3; C++)
+        for (J=0; J<3; J++)
         {
-            scanf("%d", &Matriz[F][C]);
+            scanf("%d", &Matriz[I][J]);
         }
         printf("\n");
     }
 
     system("cls");
 
-    for (C=0; C<3; C++)
+    for (J=0; J<3; J++)
     {
-        Matriz[0][C]=Matriz[0][C]*4;
+        Matriz[0][J]=Matriz[0][J]*4;
     }
 
-    for (F=0; F<2; F++)
+    for (I=0; I<2; I++)
     {
-        Matriz[F][2]=Matriz[F][2]*3;
+        Matriz[I][2]=Matriz[I][2]*3;
     }
-
+    
     M=Matriz[0][0];
 
-    for (F=0; F<2; F++)
+    for (I=0; I<2; I++)
     {
-        for (C=0; C<3; C++)
+        for (J=0; J<3; J++)
         {
-            if (Matriz[F][C]<M)
+            if (Matriz[I][J]<M)
             {
-                M=Matriz[F][C];
+                M=Matriz[I][J];
             }
-            S=S+Matriz[F][C];
+            S=S+Matriz[I][J];
         }
         printf("\n");       
     }
     printf("El valor mas bajo de la matriz es %d y la suma de su contenido es %d\n\n", M, S);
 
     printf("La matriz modificada es:\n\n");
-    for (F=0; F<2; F++)
+    for (I=0; I<2; I++)
     {
-        for (C=0; C<3; C++)
+        for (J=0; J<3; J++)
         {
             printf("%d\t", Matriz[F][C]);
         }
